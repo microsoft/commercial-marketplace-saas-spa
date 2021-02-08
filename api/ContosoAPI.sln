@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoAPI", "ContosoAPI\ContosoAPI.csproj", "{6107FABE-21E4-4529-90A7-08416D2397BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Marketplace", "Microsoft.Marketplace\Microsoft.Marketplace.csproj", "{92D1D71D-77A4-4818-A373-238CD9F120E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6107FABE-21E4-4529-90A7-08416D2397BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6107FABE-21E4-4529-90A7-08416D2397BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6107FABE-21E4-4529-90A7-08416D2397BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6107FABE-21E4-4529-90A7-08416D2397BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D1D71D-77A4-4818-A373-238CD9F120E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D1D71D-77A4-4818-A373-238CD9F120E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D1D71D-77A4-4818-A373-238CD9F120E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D1D71D-77A4-4818-A373-238CD9F120E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FBD555F-9631-45F4-A609-920776243A13}
+	EndGlobalSection
+EndGlobal

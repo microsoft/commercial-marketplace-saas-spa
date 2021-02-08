@@ -1,0 +1,16 @@
+{
+    "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/api",
+    "proxyUri": "http://localhost:7071/api"
+ },
+"liveServer.settings.host": "localhost",
+"azureFunctions.deploySubpath": "api\\ContosoAPI/bin/Release/netcoreapp3.1/publish",
+"azureFunctions.projectLanguage": "C#",
+"azureFunctions.projectRuntime": "~3",
+"debug.internalConsoleOptions": "neverOpen",
+"azureFunctions.preDeployTask": "publish",
+"staticWebApps.appSubpath": "/",
+"staticWebApps.apiSubpath": "/api",
+"staticWebApps.outputSubpath": "build",
+}

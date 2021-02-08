@@ -1,0 +1,4 @@
+git remote add marketplaceclient https://github.com/Azure/commercial-marketplace-client-dotnet.git
+git fetch marketplaceclient
+git merge -s ours --no-commit  --allow-unrelated-histories marketplaceclient/main
+git read-tree --prefix=api/Microsoft.Marketplace -u marketplaceclient/main:src
