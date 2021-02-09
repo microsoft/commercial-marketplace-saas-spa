@@ -7,18 +7,21 @@
   - [Contributing](#contributing)
   - [Trademarks](#trademarks)
   
-This sample addresses a very narrow case to demonstrate 
+This sample addresses a very narrow case to demonstrate the following. It is **designed to run locally** to demonstrate the AAD SSO on the client side, with a server side component calling the APIs.
 - How to sign on a user on the landing page with Azure Active Directory, as requested by the [policy](https://docs.microsoft.com/en-us/legal/marketplace/certification-policies#10003-authentication-options).  
 - Using Microsoft Graph or existing claims to get user's contact details.
 - Calling the APIs from an Azure Function on the server side and returning result.
 - Using [Microsoft Commercial Marketplace C# client](https://github.com/microsoft/commercial-marketplace-client-dotnet) source code.
 
-What this sample is not
+**This sample is not**
+
 - A best practices blueprint for calling back end APIs (the solution's API endpoint is not secured, please use your own method to secure it.)
 - No store for other secrets, e.g. client secret while getting the access token for using the fulfillment API client.
+- Intended to be deployed to Azure. 
 
 
 ## Installing and getting it running
+
 The sample assumes you have a SaaS offer published on Microsoft Commercial Marketplace, preferably in preview mode, so you can test. You do not have to change the landing page designation, we can use the "token" parameter on the landing page URL to demonstrate the concept.
 
 ### Prerequisites
@@ -27,13 +30,9 @@ Solution is developed and tested on [Visual Studio Code](https://code.visualstud
 
 [Azure Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) helps you to publish the static Web App and the function app. Make sure you have the [Azure Functions for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) is also installed. It should be installed as a part of the Azure Tools extensions. 
 
-
 After you clone the repo, make sure the API builds by typing ```dotnet build``` in the "api/ContosoAPI" folder.. It has a copy of the C# client library, and if you wish to make use of the latest version of the client, the file ["read-tree.txt"](./read-tree.txt) provides an example for how to point to a subtree within a GitHub repo and use a copy of it.
 
-
-
 To run locally, use [Visual Studio Code extension, Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Please note the settings in the ```settings.json``` file in the ```.vscode``` folder to make sure the page is served from ```localhost``` not ```127.0.0.1``` because the SPA settings for the AAD App Registration does not allow ```127.0.0.1```.
-
 
 ## Running locally
 
@@ -42,6 +41,7 @@ Make a new AAD App Registration for SPA for logging on the buying users. It has 
 Modify the ```clientId``` settings in the [authConfig.js](./authConfig.js) file with the new app registration's App ID (Client Id).
 
 Also use ```dotnet user-secrets``` commands to add three secrets below verbatim. Please see the line calling the constructor ```ClientSecretCredential``` in the file [ResolveSubscription.cs](./api/ContsoAPI/ResolveSubscription.cs). You must use the app registration details you added on the Partner Center's technical details page.
+
 - TenantId
 - AppId
 - ClientSecret
@@ -75,7 +75,6 @@ Then paste it in the "Token" input field of the index page, then select "append 
 This should call the backend API with the token paramater, which in turn will call the Marketplace resolve API. Once all succeeds, it should show the raw result of the resolve call.
 
 ![ResolveResult](./assets/ResolveAPI.png)
-
 
 ## Contributing
 
