@@ -26,7 +26,7 @@ The sample assumes you have a SaaS offer published on Microsoft Commercial Marke
 
 ### Prerequisites
 
-Solution is developed and tested on [Visual Studio Code](https://code.visualstudio.com/). 
+Solution is developed and tested on [Visual Studio Code](https://code.visualstudio.com/).
 
 [Azure Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) helps you to publish the static Web App and the function app. Make sure you have the [Azure Functions for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) is also installed. It should be installed as a part of the Azure Tools extensions. 
 
