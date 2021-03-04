@@ -17,8 +17,7 @@ This sample addresses a very narrow case to demonstrate the following. It is **d
 
 - A best practices blueprint for calling back end APIs (the solution's API endpoint is not secured, please use your own method to secure it.)
 - No store for other secrets, e.g. client secret while getting the access token for using the fulfillment API client.
-- Intended to be deployed to Azure. 
-
+- Intended to be deployed to Azure.
 
 ## Installing and getting it running
 
