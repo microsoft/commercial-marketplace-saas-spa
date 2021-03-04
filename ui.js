@@ -51,6 +51,12 @@ function updateUIWithGraphDetails(data, endpoint) {
 
     const address = document.createElement('p');
     address.innerHTML = "<strong>Location: </strong>" + data.officeLocation;
+
+    const upn = document.createElement('p');
+    upn.innerHTML = "<strong>User Princial Name: </strong>" + data.userPrincipalName;
+
+    const mail = document.createElement('p');
+    mail.innerHTML = "<strong>Email address: </strong>" + data.mail;
     
     profileDiv.appendChild(displayName);
     profileDiv.appendChild(givenName);
@@ -58,6 +64,8 @@ function updateUIWithGraphDetails(data, endpoint) {
     profileDiv.appendChild(title);
     profileDiv.appendChild(phone);
     profileDiv.appendChild(address);
+    profileDiv.appendChild(upn);
+    profileDiv.appendChild(mail);
     profileDiv.style.display = "";
   } 
 }
