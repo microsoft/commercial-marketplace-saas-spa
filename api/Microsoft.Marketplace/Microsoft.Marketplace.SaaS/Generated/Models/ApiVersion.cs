@@ -10,7 +10,7 @@ using System.ComponentModel;
 
 namespace Microsoft.Marketplace.SaaS.Models
 {
-    /// <summary> The request must send the following parameters as a URL Encoded form; grant_type - client_credentials; resource - 62d94f6c-d599-489b-a797-3e10e42fbe22; client_id - AAD Registered App Client ID; client_secret - AAD Registered App Client Secret. </summary>
+    /// <summary> The request must send the following parameters as a URL Encoded form; grant_type - client_credentials; resource - 20e940b3-4c77-4b0b-9a53-9e16a1b010a7; client_id - AAD Registered App Client ID; client_secret - AAD Registered App Client Secret. </summary>
     internal readonly partial struct ApiVersion : IEquatable<ApiVersion>
     {
         private readonly string _value;
